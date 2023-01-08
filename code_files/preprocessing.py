@@ -110,7 +110,7 @@ class PreprocessChats:
             chat = emoji_pattern.sub(r'', chat) #no emoji
 
             #save the chats in processed_chats dir
-            new_file = open(self.master_folder+i+'txt', "w+")
+            new_file = open(self.master_folder+i+'.txt', "w+")
             new_file.write(chat)
             new_file.close()
 
